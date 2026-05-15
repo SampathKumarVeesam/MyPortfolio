@@ -98,4 +98,6 @@ export function loadSavedTheme(): void {
 
 ---
 
-Crafted with ♥ JOY and clean code.
+Crafted with ♥ by Sampath Kumar Veesam.
+
+LIVE LINK : https://portfolio-sampath.netlify.app/
