@@ -274,10 +274,23 @@ export function initContactForm(): void {
 
   form.addEventListener("submit", (e: Event) => {
     e.preventDefault();
+    
+    const nameInput = document.getElementById("name") as HTMLInputElement | null;
+    const emailInput = document.getElementById("email") as HTMLInputElement | null;
+    const subjectInput = document.getElementById("subject") as HTMLInputElement | null;
+    const messageInput = document.getElementById("message") as HTMLTextAreaElement | null;
+    
+    const name = nameInput?.value || "Someone";
+    const email = emailInput?.value || "No email provided";
+    const subject = subjectInput?.value ? `Portfolio Contact: ${subjectInput.value}` : `New message from ${name}`;
+    const body = `Name: ${name}\nEmail: ${email}\n\nMessage:\n${messageInput?.value || ""}`;
+    
+    window.location.href = `mailto:sampathkumarveesam@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
     const btn = form.querySelector<HTMLButtonElement>(".form-submit");
     if (!btn) return;
 
-    btn.textContent = "✓ Message Sent!";
+    btn.textContent = "✓ Opening Mail Client...";
     btn.style.background = "linear-gradient(135deg, #00ff88, #00d4ff)";
     setTimeout(() => {
       btn.textContent = "Send Message";

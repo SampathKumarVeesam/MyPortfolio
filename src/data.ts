@@ -13,7 +13,7 @@ export const PORTFOLIO_DATA: PortfolioData = {
     phone: "+91 93906 94772",
     email: "sampathkumarveesam@gmail.com",
     location: "Hyderabad, India",
-    linkedin: "https://linkedin.com/in/sampath-kumar-veesam",
+    linkedin: "https://www.linkedin.com/in/sampathkumarveesam/",
     github: "https://github.com/SampathKumarVeesam",
     profileImage: "/images/profile.png",
     heroBackground: "/images/hero-bg.png",

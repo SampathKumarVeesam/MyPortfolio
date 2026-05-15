@@ -561,7 +561,7 @@ export function buildFooter(): HTMLElement {
   const footer = el("footer", { className: "footer" });
   footer.appendChild(
     el("p", {
-      html: `© ${new Date().getFullYear()} Sampath Kumar Veesam. Crafted with <span class="heart">♥</span> and clean code.`,
+      html: `© ${new Date().getFullYear()} Sampath Kumar Veesam. Crafted with <span class="heart">♥</span> JOY and clean code.`,
     })
   );
   return footer;
