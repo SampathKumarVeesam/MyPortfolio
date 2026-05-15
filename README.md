@@ -98,4 +98,4 @@ export function loadSavedTheme(): void {
 
 ---
 
-Crafted with ♥ and clean code.
+Crafted with ♥ JOY and clean code.
