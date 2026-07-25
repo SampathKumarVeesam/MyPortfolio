@@ -53,19 +53,34 @@ MyPortfolio/
 
 ### Running Locally
 
-Start the Vite development server with Hot Module Replacement (HMR):
-```bash
-npm run dev
-```
-Open [http://localhost:5173/](http://localhost:5173/) in your browser.
+1. Copy `.env.example` to `.env`:
+   ```bash
+   cp .env.example .env
+   ```
+2. Open `.env` and fill in your Zoho email credentials:
+   - For `SMTP_USER` and `IMAP_USER`, set your Zoho email address (e.g., `sampathkumarveesam@zoho.in`).
+   - For `SMTP_PASSWORD` and `IMAP_PASSWORD`, set your Zoho account password (or **Zoho App Password** if you have 2FA enabled on Zoho).
+   - For `RECIPIENT_EMAIL`, set the Gmail address where you want to receive messages (e.g., `sampathkumarveesam@gmail.com`).
 
-### Building for Production
+3. Start the dev servers (both Vite frontend and Express backend concurrently):
+   ```bash
+   npm run dev
+   ```
+   Open [http://localhost:5173/](http://localhost:5173/) in your browser. All contact form submissions will be securely proxied to the Express backend running on port `3000` and emailed via Zoho.
 
-To create an optimized production build:
-```bash
-npm run build
-```
-The compiled files will be output to the `dist/` directory, ready to be deployed to any static host (Vercel, Netlify, GitHub Pages, etc.).
+### Running in Production
+
+To build the frontend and run the production server:
+1. Build the frontend:
+   ```bash
+   npm run build
+   ```
+2. Start the Express server:
+   ```bash
+   npm start
+   ```
+   The backend server will serve the static built frontend from the `dist/` directory on the configured port (default `3000`) and handle email sending.
+
 
 ## ✍️ How to Update Your Content
 
