@@ -300,6 +300,23 @@ export function initContactForm(): void {
       return;
     }
 
+    // Email format validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      alert("Please enter a valid email address.");
+      return;
+    }
+
+    // Phone number format validation (if provided)
+    if (phone) {
+      const digitCount = phone.replace(/\D/g, "").length;
+      const phoneRegex = /^\+?[0-9\s\-()]{10,20}$/;
+      if (digitCount < 10 || !phoneRegex.test(phone)) {
+        alert("Please enter a valid contact number (must be 10-20 digits).");
+        return;
+      }
+    }
+
     // Set loading state
     const originalText = btn.textContent;
     btn.disabled = true;

@@ -502,21 +502,21 @@ export function buildContact(data: PortfolioData): HTMLElement {
       id: "email",
       label: "Your Email",
       type: "email",
-      placeholder: "john@example.com",
+      placeholder: "you@example.com",
       required: true,
     },
     {
       id: "phone",
       label: "Contact Number",
       type: "tel",
-      placeholder: "+91 93906 94772",
+      placeholder: "+91 99999 99999",
       required: false,
     },
     {
       id: "subject",
       label: "Subject",
       type: "text",
-      placeholder: "Project Discussion",
+      placeholder: "Hiring Opportunity",
       required: false,
     },
   ];
@@ -541,7 +541,7 @@ export function buildContact(data: PortfolioData): HTMLElement {
     el("textarea", {
       attrs: {
         id: "message",
-        placeholder: "Tell me about your project...",
+        placeholder: "Tell me about the job role, company, or opportunity...",
         required: "",
       },
     })
