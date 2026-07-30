@@ -9,7 +9,7 @@ export const PORTFOLIO_DATA: PortfolioData = {
     name: "Sampath Kumar",
     lastName: "Veesam",
     initials: "SK.",
-    title: "Software Development Engineer in Test",
+    title: "Software Test Engineer (STE)",
     phone: "+91 93906 94772",
     email: "sampathkumarveesam@gmail.com",
     location: "Hyderabad, India",
@@ -18,9 +18,9 @@ export const PORTFOLIO_DATA: PortfolioData = {
     profileImage: "/images/profile.png",
     heroBackground: "/images/hero-bg.png",
     summary:
-      "Results-driven SDET with 1.5+ years of experience building robust automation frameworks, testing REST APIs, and delivering high-quality software through Agile methodologies.",
+      "Software Test Engineer (STE) with 1.5+ years of experience specializing in test automation, mobile testing, backend API validation, and full-stack development. Proficient in building robust frameworks using Playwright, JavaScript, and Node.js, with deep expertise in REST API testing and SQL database validation.",
     aboutParagraphs: [
-      "I'm a Software Development Engineer in Test based in Hyderabad, India, with hands-on experience in test automation, backend API validation, and full-stack development.",
+      "I'm a Software Test Engineer (STE) based in Hyderabad, India, with hands-on experience in test automation, mobile testing, backend API validation, and full-stack development.",
       "Proficient in building robust automation frameworks using Playwright, JavaScript, and Node.js. I've demonstrated expertise in REST API testing, SQL database validation, and Agile QA methodologies with a proven track record of reducing manual testing effort by 40%.",
       "I hold a B.Tech in Computer Science from KasiReddy NarayanReddy College of Engineering & Research, and I'm passionate about designing scalable test architectures and building AI-driven knowledge systems.",
     ],
@@ -31,13 +31,15 @@ export const PORTFOLIO_DATA: PortfolioData = {
       "REST APIs",
       "PostgreSQL",
       "GitHub Actions",
-      "Agile / Scrum",
+      "Agile/Scrum",
       "CI/CD",
+      "Mobile Testing",
+      "Manual/Automation Testing"
     ],
   },
 
   roles: [
-    "Software Development Engineer in Test",
+    "Software Test Engineer (STE)",
     "Full Stack Developer",
     "QA Automation Engineer",
     "Test Automation Architect",
@@ -50,7 +52,7 @@ export const PORTFOLIO_DATA: PortfolioData = {
   ],
 
   floatingBadges: [
-    { icon: "🎯", text: "SDET Engineer", position: "badge-1" },
+    { icon: "🎯", text: "STE (QA Automation)", position: "badge-1" },
     { icon: "⚡", text: "Playwright Expert", position: "badge-2" },
     { icon: "🚀", text: "Full Stack Dev", position: "badge-3" },
   ],
@@ -67,13 +69,13 @@ export const PORTFOLIO_DATA: PortfolioData = {
   skills: [
     {
       icon: "🔧",
-      title: "Frameworks & Testing",
+      title: "Testing & Mobile Automation",
       items: [
         { name: "Playwright", level: 95 },
-        { name: "Selenium WebDriver", level: 85 },
         { name: "Test Automation (POM)", level: 90 },
-        { name: "Regression Testing", level: 92 },
-        { name: "Postman / REST APIs", level: 90 },
+        { name: "Appium & Mobile Testing", level: 85 },
+        { name: "Regression & E2E Testing", level: 92 },
+        { name: "API & Backend Testing", level: 90 },
       ],
     },
     {
@@ -82,20 +84,18 @@ export const PORTFOLIO_DATA: PortfolioData = {
       items: [
         { name: "JavaScript (ES6+)", level: 92 },
         { name: "Java", level: 80 },
-        { name: "Node.js / Express.js", level: 85 },
-        { name: "HTML5 / CSS3", level: 88 },
-        { name: "ReactJS", level: 75 },
+        { name: "Node.js/Express.js", level: 85 },
+        { name: "HTML5/CSS3/ReactJS", level: 88 },
       ],
     },
     {
       icon: "🗄️",
-      title: "Database & DevOps",
+      title: "Database & DevOps Tools",
       items: [
-        { name: "SQL / PostgreSQL", level: 88 },
-        { name: "Database Testing", level: 85 },
-        { name: "Git / GitHub", level: 90 },
-        { name: "GitHub Actions CI/CD", level: 85 },
-        { name: "JIRA / Defect Tracking", level: 88 },
+        { name: "SQL & PostgreSQL", level: 88 },
+        { name: "Git, GitHub & CI/CD", level: 90 },
+        { name: "JIRA & Defect Tracking", level: 88 },
+        { name: "Testing Methodologies (Agile/SDLC)", level: 90 },
       ],
     },
   ],
@@ -109,9 +109,10 @@ export const PORTFOLIO_DATA: PortfolioData = {
       bullets: [
         "Architected and maintained Playwright-based test automation framework from scratch, achieving 40% reduction in manual regression testing effort and increasing test coverage by 60%",
         "Developed LinkedIn automation scraper using Playwright and JavaScript, enabling structured data extraction and reducing manual data collection time by 80%",
-        "Designed and implemented RAG knowledge base systems for Mockwin.ai, improving AI response accuracy by 35% through structured VLSI and SAP domain data",
+        "Prepared a structured technical knowledge base for Mockwin.ai using AI prompts, which boosted AI response accuracy by 35% for VLSI and SAP topics.",
         "Executed comprehensive REST API testing and backend validation, identifying and resolving 50+ critical defects before production release",
-        "Collaborated in Agile cross-functional teams with sprint planning, daily standups, and defect triage using JIRA; maintained 95% on-time delivery rate",
+        "Collaborated in Agile cross-functional teams with sprint planning, daily standups, and defect triage using JIRA; maintained 95% on-time test delivery rate.",
+        "Executed mobile app testing and verified device responsiveness using Appium across Android and iOS platforms..",
       ],
     },
     {
@@ -126,14 +127,14 @@ export const PORTFOLIO_DATA: PortfolioData = {
       ],
     },
     {
-      date: "August 2025 – September 2025",
+      date: "July 2025 – September 2025",
       role: "Full Stack Developer",
       company: "TEK-PAL",
       location: "Hyderabad, India",
       bullets: [
         "Developed full-featured real estate web application using Node.js, Express.js, and PostgreSQL, handling 1000+ property listings with optimized search",
         "Engineered secure REST APIs with OAuth2 authentication and role-based access control, serving 500+ daily API requests",
-        "Implemented Excel bulk upload with data validation and error handling, reducing manual data entry effort by 70%",
+        "Implemented Excel bulk upload functionality with data validation and error handling, reducing manual data entry effort by 70%",
       ],
     },
     {
@@ -143,7 +144,7 @@ export const PORTFOLIO_DATA: PortfolioData = {
       location: "Bangalore, India",
       bullets: [
         "Executed functional, regression, and system testing for enterprise cloud applications, maintaining 98% test case pass rate",
-        "Applied Boundary Value Analysis (BVA) and Equivalence Partitioning techniques, reducing redundant test execution by 30%",
+        "Applied Boundary Value Analysis (BVA) and Equivalence Partitioning techniques to design optimized test cases, reducing redundant test execution by 30%",
         "Authored detailed test plans, test cases, and defect reports with clear reproduction steps, improving developer-debugging efficiency",
       ],
     },
@@ -179,7 +180,7 @@ export const PORTFOLIO_DATA: PortfolioData = {
   education: [
     {
       icon: "🎓",
-      degree: "B.Tech – Computer Science & Engineering",
+      degree: "Bachelor of Engineering (Btech) - Computer Science and Engineering",
       school:
         "KasiReddy NarayanReddy College of Engineering & Research, Hyderabad",
       details: "Graduated: 2023 · CGPA: 7.14 / 10",
@@ -192,9 +193,9 @@ export const PORTFOLIO_DATA: PortfolioData = {
     },
     {
       icon: "🏫",
-      degree: "SSC (Secondary School Certificate)",
-      school: "Bethel Velanganni Matha High School, Nellore",
-      details: "Graduated: 2017 · Grade Points: 9.0 / 10",
+      degree: "SSC",
+      school: "Bethel Velanganni Matha High school, Nellore",
+      details: "Graduated: 2017 | Grade Points : 9.0/10",
     },
   ],
 

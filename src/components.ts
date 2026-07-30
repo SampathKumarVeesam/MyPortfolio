@@ -506,6 +506,13 @@ export function buildContact(data: PortfolioData): HTMLElement {
       required: true,
     },
     {
+      id: "phone",
+      label: "Contact Number",
+      type: "tel",
+      placeholder: "+91 93906 94772",
+      required: false,
+    },
+    {
       id: "subject",
       label: "Subject",
       type: "text",

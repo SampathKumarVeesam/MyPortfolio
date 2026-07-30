@@ -25,7 +25,7 @@ app.use(express.static(path.join(__dirname, 'dist')));
 
 // ─── SMTP (SEND EMAIL) ENDPOINT ──────────────────────────────────────
 app.post('/api/send-email', async (req, res) => {
-  const { name, email, subject, message } = req.body;
+  const { name, email, phone, subject, message } = req.body;
 
   // Basic validation
   if (!name || !email || !message) {
@@ -60,6 +60,7 @@ app.post('/api/send-email', async (req, res) => {
     text: `You have received a new message from your portfolio contact form:\n\n` +
           `Name: ${name}\n` +
           `Email: ${email}\n` +
+          `Contact Number: ${phone || 'Not provided'}\n` +
           `Subject: ${subject || 'No Subject'}\n\n` +
           `Message:\n${message}`,
     html: `
@@ -67,6 +68,7 @@ app.post('/api/send-email', async (req, res) => {
         <h2 style="color: #6c63ff; border-bottom: 2px solid #6c63ff; padding-bottom: 10px;">New Message from Portfolio</h2>
         <p><strong>Name:</strong> ${name}</p>
         <p><strong>Email:</strong> <a href="mailto:${email}">${email}</a></p>
+        <p><strong>Contact Number:</strong> ${phone || 'Not provided'}</p>
         <p><strong>Subject:</strong> ${subject || 'No Subject'}</p>
         <div style="background-color: #f9f9f9; padding: 15px; border-left: 4px solid #6c63ff; margin-top: 20px;">
           <p style="margin: 0; white-space: pre-wrap;"><strong>Message:</strong><br/>${message}</p>

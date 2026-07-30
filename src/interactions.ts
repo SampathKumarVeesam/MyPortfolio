@@ -282,11 +282,13 @@ export function initContactForm(): void {
 
     const nameInput = document.getElementById("name") as HTMLInputElement | null;
     const emailInput = document.getElementById("email") as HTMLInputElement | null;
+    const phoneInput = document.getElementById("phone") as HTMLInputElement | null;
     const subjectInput = document.getElementById("subject") as HTMLInputElement | null;
     const messageInput = document.getElementById("message") as HTMLTextAreaElement | null;
     
     const name = nameInput?.value || "";
     const email = emailInput?.value || "";
+    const phone = phoneInput?.value || "";
     const subject = subjectInput?.value || "";
     const message = messageInput?.value || "";
 
@@ -307,7 +309,7 @@ export function initContactForm(): void {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ name, email, subject, message }),
+        body: JSON.stringify({ name, email, phone, subject, message }),
       });
 
       const result = await response.json();
