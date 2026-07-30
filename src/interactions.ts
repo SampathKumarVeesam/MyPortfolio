@@ -142,6 +142,9 @@ export function initTypingEffect(roles: string[]): void {
 // ─── 3D TILT ON GLASS CARDS ─────────────────────────────────────────
 export function initTiltCards(): void {
   document.querySelectorAll<HTMLElement>(".glass-card").forEach((card) => {
+    // Skip 3D tilt animation on the contact form card for better usability when typing
+    if (card.closest(".contact-form")) return;
+
     card.addEventListener("mousemove", (e: MouseEvent) => {
       const rect: DOMRect = card.getBoundingClientRect();
       const x: number = e.clientX - rect.left;
