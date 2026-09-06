@@ -115,4 +115,4 @@ export function loadSavedTheme(): void {
 
 Crafted with ♥ by Sampath Kumar Veesam.
 
-LIVE LINK : https://portfolio-sampath.netlify.app/
+LIVE LINK : https://sampathkumarveesamportfolio.netlify.app/
