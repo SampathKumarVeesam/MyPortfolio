@@ -102,7 +102,7 @@ export const PORTFOLIO_DATA: PortfolioData = {
 
   experience: [
     {
-      date: "February 2026 – Present",
+      date: "February 2026 – July 2026",
       role: "SDET (Software Development Engineer in Test)",
       company: "Codinglimits",
       location: "Nellore, India",
